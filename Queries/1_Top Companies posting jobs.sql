@@ -1,4 +1,4 @@
--- Finding the top 10 companies with the most job postings and getting the average salaries being offered:
+-- Finding the top 20 companies with the most job postings and getting the average salaries being offered:
 
 SELECT 
     name, 
@@ -22,6 +22,6 @@ JOIN company_dim cd ON jpf.company_id = cd.company_id
 WHERE job_title_short='Data Analyst'
 GROUP BY jpf.company_id, name
 ORDER BY num_jobs DESC
-LIMIT 10;
+LIMIT 20;
 
 
