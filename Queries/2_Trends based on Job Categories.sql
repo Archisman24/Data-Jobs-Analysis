@@ -28,5 +28,6 @@
     FROM JobCategories jc
     JOIN skills_job_dim sj ON jc.job_id = sj.job_id
     JOIN skills_dim s ON sj.skill_id = s.skill_id
+    WHERE job_category NOT IN ('Other')
     GROUP BY jc.job_category, s.skills
     ORDER BY jc.job_category ASC, num_jobs DESC;
