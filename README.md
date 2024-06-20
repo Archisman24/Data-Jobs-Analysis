@@ -75,7 +75,6 @@ GROUP BY jpf.company_id, name
 ORDER BY num_jobs DESC
 LIMIT 20;
 ```
-![Top 20 Companies by Job Postings](assest/Top_20_Companies_by_Job_Postings.png)
 
 ***Analysis:***
 
@@ -86,7 +85,7 @@ Here's the breakdown of the top 20 companies by job postings and average salarie
 - **Frequent Job Posters with No Salary Data:** Companies like "Emprego," "Confidenziale," "Listopro," and "Upwork" have high job postings but no provided salary data.
 - **Major Employers with Competitive Salaries:** "Insight Global," "Citi," and "Accenture" have substantial job postings (over 1,700 each) and offer average salaries ranging from $113,786.07 to $124,904.52.
 
-
+![Top 20 Companies by Job Postings](assest/Top_20_Companies_by_Job_Postings.png)
 
 ### 2. Top 20 Companies for Data Analyst Positions: 
 Focuses on companies with the highest number of job postings specifically for Data Analyst roles, along with their average salaries.
@@ -115,7 +114,7 @@ Here's the breakdown of the top 20 companies for Data Analyst positions and aver
 4. **Prominent Employers with Competitive Salaries**: Companies like "Insight Global," "UnitedHealth Group," and "Accenture" have substantial job postings (over 300 each) with average salaries ranging from $92,801.35 to $115,000.
 5. **Diverse Industry Representation**: The list includes staffing firms (e.g., "Robert Half," "Randstad"), consulting firms (e.g., "Booz Allen Hamilton," "Accenture"), tech companies (e.g., "Tesla," "S&P Global"), and financial institutions (e.g., "Citi," "UnitedHealth Group").
 
-
+![Top 20 Companies by Job Postings For Data Analysts](assest/Top_20_Companies_by_Job_Postings_DA.png)
 
 ### 3. Job Distribution by Category and Type: 
 Analyzes the number of job postings based on job categories, schedule types, and work-from-home options.
@@ -145,8 +144,7 @@ Here's the breakdown of the job distribution based on job categories, schedule t
 
 5. **Internship Opportunities**: Internships are available predominantly in Data Analyst and Data Scientist roles, suggesting a robust pipeline for entry-level professionals in these fields.
 
-
-
+![Job Distribution by Category and Type](assest/Job_Distribution_by_Category_and_Type.png)
 ### 4. Top Skills in Key Data Roles: 
 Identifies the most commonly required skills for Data Analyst, Data Engineer, and Data Scientist positions and also shows th number of jobs associated with each skills.
 
@@ -188,6 +186,7 @@ Here are the key insights from the dataset on job categories, skills, and number
 
 These insights summarize the critical skills demanded by each job category in the data field, highlighting commonalities and unique requirements across Data Analysts, Data Engineers, and Data Scientists.
 
+![Top Skills in Key Data Roles](assest/Top_Skills_in_Data_Roles.png)
 
 ### 5.Top 20 Highest Paying Remote Data Analyst Jobs: 
 Identifies the top 20 highest paying remote Data Analyst roles with specified salaries.
@@ -283,12 +282,11 @@ These points summarize the diverse skill set requirements across different data-
 
 
 
-### 7. Top 10 Skills for Remote Data Analyst Jobs: 
+### 7. Top 10 Skills for Remote Data Analyst Jobs (Based on Average Salary): 
 Identifies the top 10 skills required for remote Data Analyst positions based on job postings and average salary.
 
 ```sql
-
--- Showing the top 10 skills required for data analyst remote jobs:  
+-- Showing the top 10 skills required for data analyst remote jobs (Based on Average Salary):  
 SELECT 
     s.skill_id, 
     s.skills, 
@@ -322,7 +320,7 @@ Here, we look into the top 10 skills required for data analyst remote jobs based
 
 These points highlight the importance of acquiring and mastering specific skills like Pyspark, Bitbucket, and Jupyter, which not only increase job prospects but also contribute to higher average salaries in the data analytics job market.
 
-
+![Top 10 Skills for Remote Data Analyst Jobs (Based on Average Salary)](assest/Top_10_Skills_for_Remote_Data_Analysts_AS.png)
 
 ### 8. Job Postings by Country: 
 Determines the number of job postings available in each country.
@@ -347,7 +345,7 @@ Here are the summarized findings regarding the number of job postings per countr
 
 These points provide a snapshot of the distribution of job opportunities across key countries based on the dataset, emphasizing their respective strengths in employment sectors.
 
-
+![Job Postings by Country](assest/Jobs_Postings_by_Country.png)
 
 ### 9. Average Salary by Job Location: 
 Calculates the average salary for job postings in various locations.
@@ -370,8 +368,6 @@ Here's a concise summary of the observations based on job location and average s
 2. **Urban Influence**: Major urban centers like San Francisco, CA and New York, NY maintain high average salaries (\$246,509 and \$246,500 respectively), likely due to strong local economies and high living costs.
 
 3. **Regional Economic Factors**: Differences in average salaries within countries highlight regional economic disparities, such as higher earnings in tech hubs like Silicon Valley versus other parts of California or the U.S., reflecting local industry strengths and economic conditions.
-
-
 
 ### 10. Top 5 In-Demand Skills for Data Analysts: 
 Identifies the five most sought-after skills for Data Analyst positions based on the number of job postings.
@@ -402,6 +398,8 @@ Here's a concise summary of the observations on skills and their respective numb
 4. **Visualization Tools**: Tableau and Power BI are also prominent, with 46,554 and 39,468 job listings respectively, underscoring the demand for professionals skilled in data visualization and business intelligence.
 
 5. **Tech Skills in High Demand**: Overall, these skills reflect a strong demand for technical proficiency in data handling, analysis, and visualization across various sectors, essential for roles ranging from data analysts to business intelligence developers.
+
+![Top 5 In-Demand Skills for Data Analysts](assest/Top_5_In-Demand_Skills_for_Data_Analysts.png)
 
 ### 11. Top 25 Skills for Remote Data Analyst Jobs: 
 Identifies the top 25 skills for remote Data Analyst positions, ranked by job frequency and average yearly salary.
@@ -449,7 +447,6 @@ Tracks the monthly trend of job postings, indicating increases or decreases comp
 
 ```sql
 -- Tracking the monthly trend of job postings, indicating whether it has increased or decreased compared to the previous month.
-
 WITH MonthlyJobPostings AS 
 (
     SELECT DATE_TRUNC('month', job_posted_date)::DATE AS month_start,
@@ -482,10 +479,14 @@ Here's a more concise summary of the underlying trend in job postings and hiring
 
 Overall, the year showed a pattern of initial stability, followed by fluctuations with periods of growth and decline in job postings. The mid-year recovery stood out as a significant trend, indicating resilience and adjustment in the job market throughout the observed period.
 
+![Monthly Job Posting Trends](assest/Monthly_Job_Posting_Trends.png)
+
 ### 13. Skill Demand Trends Over Time: 
 Analyzes the yearly changes in demand for specific skills by comparing the number of job postings mentioning those skills.
 
 ```sql
+-- Analyzing the change in demand for specific skills over time by comparing the number of job postings mentioning those skills each month:
+
 WITH SkillTrend AS (
     SELECT 
         s.skills,
@@ -527,6 +528,7 @@ After analysing the yearly changes in demand for specific skills, the following 
 These points summarize the trends observed across various technologies based on their job postings over the years, indicating the evolving landscape of skills in the tech industry.
 
 
+
 ## Conclusions: 🎉 Decoding the Data Job Market Trends
 
 The analysis of job postings and skill requirements in the data analytics field reveals several compelling insights and trends that aspiring data analysts should heed:
@@ -554,3 +556,5 @@ The analysis of job postings and skill requirements in the data analytics field 
 In conclusion, the data analytics landscape presents abundant opportunities for those equipped with the right skills and industry knowledge. By focusing on core technical competencies, staying abreast of industry trends, and embracing flexibility, aspiring data analysts can navigate the evolving job market and thrive in their careers.
 
 ### References:
+
+The dataset was obtained from the SQL Course by Luke Barousse.
