@@ -75,7 +75,7 @@ GROUP BY jpf.company_id, name
 ORDER BY num_jobs DESC
 LIMIT 20;
 ```
-![Top 20 Companies by Job Postings](assest\Top_20_Companies_by_Job_Postings.png)
+![Top 20 Companies by Job Postings](assest/Top_20_Companies_by_Job_Postings.png)
 
 ***Analysis:***
 
