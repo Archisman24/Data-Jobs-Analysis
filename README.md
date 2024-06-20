@@ -118,7 +118,7 @@ Here's the breakdown of the top 20 companies for Data Analyst positions and aver
 4. **Prominent Employers with Competitive Salaries**: Companies like "Insight Global," "UnitedHealth Group," and "Accenture" have substantial job postings (over 300 each) with average salaries ranging from $92,801.35 to $115,000.
 5. **Diverse Industry Representation**: The list includes staffing firms (e.g., "Robert Half," "Randstad"), consulting firms (e.g., "Booz Allen Hamilton," "Accenture"), tech companies (e.g., "Tesla," "S&P Global"), and financial institutions (e.g., "Citi," "UnitedHealth Group").
 
-<div style="text-align: center;">
+<div align="center">
     <img src="assest/Top_20_Companies_by_Job_Postings_DA.png" alt="Top 20 Companies by Job Postings For Data Analysts">
 </div>
 
@@ -151,7 +151,7 @@ Here's the breakdown of the job distribution based on job categories, schedule t
 
 5. **Internship Opportunities**: Internships are available predominantly in Data Analyst and Data Scientist roles, suggesting a robust pipeline for entry-level professionals in these fields.
 
-<div style="text-align: center;">
+<div align="center">
     <img src="assest/Job_Distribution_by_Category_and_Type.png" alt="Job Distribution by Category and Type">
 </div>
 
@@ -196,7 +196,7 @@ Here are the key insights from the dataset on job categories, skills, and number
 
 These insights summarize the critical skills demanded by each job category in the data field, highlighting commonalities and unique requirements across Data Analysts, Data Engineers, and Data Scientists.
 
-<div style="text-align: center;">
+<div align="center">
     <img src="assest/Top_Skills_in_Data_Roles.png" alt="Top Skills in Key Data Roles">
 </div>
 
@@ -332,7 +332,7 @@ Here, we look into the top 10 skills required for data analyst remote jobs based
 
 These points highlight the importance of acquiring and mastering specific skills like Pyspark, Bitbucket, and Jupyter, which not only increase job prospects but also contribute to higher average salaries in the data analytics job market.
 
-<div style="text-align: center;">
+<div align="center">
     <img src="assest/Top_10_Skills_for_Remote_Data_Analysts_AS.png" alt="Top 10 Skills for Remote Data Analyst Jobs (Based on Average Salary)">
 </div>
 
@@ -358,7 +358,7 @@ Here are the summarized findings regarding the number of job postings per countr
 3. **United Kingdom, Canada, and Germany**: These countries also show substantial numbers of job postings, highlighting strong economic sectors and demand across diverse industries.
 
 These points provide a snapshot of the distribution of job opportunities across key countries based on the dataset, emphasizing their respective strengths in employment sectors.
-<div style="text-align: center;">
+<div align="center">
     <img src="assest/Jobs_Postings_by_Country.png" alt="Job Postings by Country">
 </div>
 
@@ -413,7 +413,7 @@ Here's a concise summary of the observations on skills and their respective numb
 4. **Visualization Tools**: Tableau and Power BI are also prominent, with 46,554 and 39,468 job listings respectively, underscoring the demand for professionals skilled in data visualization and business intelligence.
 
 5. **Tech Skills in High Demand**: Overall, these skills reflect a strong demand for technical proficiency in data handling, analysis, and visualization across various sectors, essential for roles ranging from data analysts to business intelligence developers.
-<div style="text-align: center;">
+<div align="center">
     <img src="assest/Top_5_In-Demand_Skills_for_Data_Analysts.png" alt="Top 5 In-Demand Skills for Data Analysts">
 </div>
 
@@ -496,7 +496,7 @@ Here's a more concise summary of the underlying trend in job postings and hiring
 
 Overall, the year showed a pattern of initial stability, followed by fluctuations with periods of growth and decline in job postings. The mid-year recovery stood out as a significant trend, indicating resilience and adjustment in the job market throughout the observed period.
 
-<div style="text-align: center;">
+<div align="center">
     <img src="assest/Monthly_Job_Posting_Trends.png" alt="Monthly Job Posting Trends">
 </div>
 
