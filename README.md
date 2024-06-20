@@ -64,7 +64,7 @@ Each query has been aimed at answering a specific question related to the data j
 Top 20 Companies by Job Postings and Average Salaries: Identifies the leading companies with the most job listings and calculates their average offered salaries.
 
 ```sql
--- Finding the top 10 companies with the most job postings and getting the average salaries being offered:
+-- Finding top 10 companies with the most job postings and getting the average salaries being offered:
 SELECT 
     name, 
     COUNT(*) AS num_jobs, 
