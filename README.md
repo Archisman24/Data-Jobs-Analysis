@@ -485,7 +485,10 @@ Overall, the year showed a pattern of initial stability, followed by fluctuation
 Analyzes the yearly changes in demand for specific skills by comparing the number of job postings mentioning those skills.
 
 ```sql
--- Analyzing the change in demand for specific skills over time by comparing the number of job postings mentioning those skills each month:
+/*
+Analyzing the change in demand for specific skills over time by comparing the number of job
+postings mentioning those skills each month:
+*/ 
 
 WITH SkillTrend AS (
     SELECT 
